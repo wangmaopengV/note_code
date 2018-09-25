@@ -1,0 +1,7 @@
+ ./client http://172.17.3.137:6501/rec/image -d="{\"Context\": {\"SessionId\":\"test face single\",\"Type\":2,\"Functions\":[200]},\"Image\":{\"Data\":{\"URI\":\"http://10.100.8.72/wmp/1.jpg\"}}}"
+
+./client http://127.0.0.1:6501/rec/form-image -filename=1.jpg
+
+g++ -o client brpc_http_json.cpp -lbrpc -lprotobuf -lgflags -lglog
+
+
